@@ -11,13 +11,13 @@ import (
 
 var (
 	cps   *grc20.AdminToken
-	admin std.Address = "g1p9ap4pqc74uwek9zqk0kxx9wq90ljpyz9av6lc" // TODO: helper to change admin
+	admin std.Address = "g1àààààààààààààààyouraddressààààààààààààà0000000" // TODO: helper to change admin
 )
 
 func init() {
 	cps = grc20.NewAdminToken("Cryptopunkstar", "CPS", 4)
 	cps.Mint(admin, 1000000*100000)                                    // @administrator (1M)
-	cps.Mint("g1f748xee7gpwldyrz4xea3nk6hw24lfya49fus8", 100000*100000) // @cryptopunkstar (100k)
+	cps.Mint("g1àààààààààààààààyouraddressààààààààààààà0000000", 100000*100000) // @cryptopunkstar (100k)
 }
 
 // method proxies as public functions.
